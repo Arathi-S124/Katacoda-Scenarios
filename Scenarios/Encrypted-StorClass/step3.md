@@ -11,9 +11,10 @@ For example,
 #input.review.object.kind == "StorageClass" becomes input.review.object.kind == "StorageClass"
 ```
 What the policy does
-It checks if the kind is "StorageClass".
-It stores the image name in a variable.
-If the StorageClass contains the “encrypted” parameter as FALSE then the statement will be true so violation message appears.
+* It checks if the kind is "StorageClass".
+* It stores the image name in a variable.
+* If the StorageClass contains the “encrypted” parameter as FALSE then the statement will be true so violation message appears.
+
 We will now apply the ConstraintTemplate.
 
 ```kubectl apply -f template.yaml{{execute}}```
@@ -25,6 +26,6 @@ Lets look at the constraint.yaml before applying.
 
 NOTE: If "no matches for kind" error comes when applying the Constraint file, try the following fixes:
 
-Make sure all the rego policy lines have been uncommented.
-Apply the template.yaml and the constraint.yaml again.
-If the error still persists, try applying the constraint.yaml again after a couple of minutes.
+* Make sure all the rego policy lines have been uncommented.
+* Apply the template.yaml and the constraint.yaml again.
+* If the error still persists, try applying the constraint.yaml again after a couple of minutes.
