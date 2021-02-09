@@ -26,7 +26,7 @@
       "course_id": "RetainPol-Deny",
       "title": "Deny Retain Reclaim Policy",
       "description": "A policy to deny Reclaim Policy of Retain Type"
-    },
+    }
     
   ]
 }
