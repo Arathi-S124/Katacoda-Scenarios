@@ -14,6 +14,7 @@ spec:
       rego: |
         package k8spspallowprivilegeescalationcontainer
         violation[{"msg": msg, "details": {}}] {
+           #input.review.object.kind == "Pod"                                                            #Checks if it is Pod
            #c := input_containers[_]
            #input_allow_privilege_escalation(c)                                                          #Container is given as input to check for violation
            #msg := sprintf("Privilege escalation for container has not been allowed: %v", [c.name]) }    #Deny message
