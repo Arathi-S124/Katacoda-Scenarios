@@ -12,4 +12,4 @@ Take a look at the deployment-non-violation.yaml before applying.
 
 ```kubectl apply -f deployment-non-violation.yaml{{execute}}```
 
-This manifest executes successfully as the allowprivilege is TRUE.
+This manifest executes successfully as the allowprivilegeescalation is TRUE.
