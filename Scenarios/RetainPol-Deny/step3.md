@@ -18,7 +18,7 @@ We will now apply the ConstraintTemplate.
 
 ```kubectl apply -f template.yaml{{execute}}```
 
-Constraint
+### Constraint
 Lets look at the constraint.yaml before applying.
 
 ```kubectl apply -f constraint.yaml{{execute}}```
